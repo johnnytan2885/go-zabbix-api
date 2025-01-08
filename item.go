@@ -11,7 +11,7 @@ type (
 	// ValueType type of information of the item
 	ValueType int
 	// DataType data type of the item
-	DataType int
+	// DataType int
 	// DeltaType value that will be stored
 	DeltaType int
 )
@@ -77,19 +77,19 @@ const (
 	Text ValueType = 4
 )
 
-const (
+// const (
 	// Data type of the item
 	// see "data_type" in https://www.zabbix.com/documentation/3.2/manual/api/reference/item/object
 
 	// Decimal data (default)
-	Decimal DataType = 0
+	// Decimal DataType = 0
 	// Octal data
-	Octal DataType = 1
+	// Octal DataType = 1
 	// Hexadecimal data
-	Hexadecimal DataType = 2
+	// Hexadecimal DataType = 2
 	// Boolean data
-	Boolean DataType = 3
-)
+	// Boolean DataType = 3
+// )
 
 const (
 	// Value that will be stored
@@ -116,7 +116,7 @@ type Item struct {
 	Name         string    `json:"name"`
 	Type         ItemType  `json:"type,string"`
 	ValueType    ValueType `json:"value_type,string"`
-	DataType     DataType  `json:"data_type,string"`
+	// DataType     DataType  `json:"data_type,string"`
 	Delta        DeltaType `json:"delta,string"`
 	Description  string    `json:"description"`
 	Error        string    `json:"error,omitempty"`
